@@ -22,5 +22,3 @@ namespace nc
 		std::map<std::string, FMOD::Sound*> sounds;
 	};
 }
-
-extern nc::AudioSystem audioSystem;

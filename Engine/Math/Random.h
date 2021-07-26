@@ -8,7 +8,4 @@ namespace nc {
 	
 	int RandomInt();
 	int RandomRangeInt(int min, int max);
-
-
-
 }

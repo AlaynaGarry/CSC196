@@ -14,10 +14,15 @@
 #include "Base/Actor.h"
 #include "Base/Scene.h"
 
+#include "Framework/EventSystem.h"
+#include "Framework/ResourceSystem.h"
+
 #include "core.h"
 
+#define NOMINMAX
 #include <vector>
 #include <memory>
+#include <algorithm>
 
 namespace nc{
 	class Engine {
@@ -26,6 +31,8 @@ namespace nc{
 		void Shutdown();
 
 		void Update(float dt);
+
+		void Draw(Core::Graphics& graphics);
 
 		template<typename T>
 		T* Get();

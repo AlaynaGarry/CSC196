@@ -1,9 +1,12 @@
 #pragma once
 #include "core.h"
+#include <string>
 
 namespace nc {
 	struct Color {
 		float r, g, b;
+
+		friend std::istream& operator >> (std::istream& stream, Color& c);
 
 		Color() : r{ 0 }, g{ 0 }, b{ 0 } {}
 		Color(float r, float g, float b) : r{ r }, g{ g }, b{ b } {}
